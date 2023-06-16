@@ -11,18 +11,18 @@ const Contact = () => {
 
       <div className="container contact__container">
         <div className="contact__options">
-          <artice className="contact__option">
-            <MdOutlineEmail/>
+          <article className="contact__option">
+            <MdOutlineEmail className='contact__option-icon'/>
             <h4>Email</h4>
             <h5>kuxa.business@gmail.com</h5>
             <a href="mailto:kuxa.business@gmail.com" target='_blank'>Send a message</a>
-          </artice>
-          <artice className="contact__option">
-            <RiMessengerLine/>
+          </article>
+          <article className="contact__option">
+            <RiMessengerLine className='contact__option-icon'/>
             <h4>Messenger</h4>
             <h5>Annie Kuksa</h5>
             <a href="https://m.me/so.annett" target='_blank'>Send a message</a>
-          </artice>
+          </article>
         </div>
 
         <form action="">
