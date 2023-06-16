@@ -18,8 +18,10 @@ const Portfolio = () => {
             <img src={PIC1} alt="Joybox app screenshot" />
           </div>
           <h3>Joybox</h3>
-          <a href="https://github.com/any-stone/joy-box-front-end" className='btn' target='_blank'>GitHub</a>
-          <a href="https://joybox-app.netlify.app/" className='btn btn-primary' target='_blank'>LiveDemo</a>
+          <div className="portfolio__item-cta">
+            <a href="https://github.com/any-stone/joy-box-front-end" className='btn' target='_blank'>GitHub</a>
+            <a href="https://joybox-app.netlify.app/" className='btn btn-primary' target='_blank'>LiveDemo</a>
+          </div>
         </article>
 
         <article className='portfolio__item'>
@@ -27,8 +29,10 @@ const Portfolio = () => {
             <img src={PIC2} alt="BiteBuddy app screenshot" />
           </div>
           <h3>BiteBuddy</h3>
-          <a href="https://github.com/Nswooten/bite-buddy-front-end" className='btn' target='_blank'>GitHub</a>
-          <a href="https://bitebuddyapp.netlify.app/" className='btn btn-primary' target='_blank'>LiveDemo</a>
+          <div className="portfolio__item-cta">
+            <a href="https://github.com/Nswooten/bite-buddy-front-end" className='btn' target='_blank'>GitHub</a>
+            <a href="https://bitebuddyapp.netlify.app/" className='btn btn-primary' target='_blank'>LiveDemo</a>
+          </div>
         </article>
 
         <article className='portfolio__item'>
@@ -36,8 +40,10 @@ const Portfolio = () => {
             <img src={PIC3} alt="FUNventory app screenshot" />
           </div>
           <h3>FUNventory</h3>
-          <a href="https://github.com/any-stone/funventory-app" className='btn' target='_blank'>GitHub</a>
-          <a href="https://funventory-app.fly.dev/" className='btn btn-primary' target='_blank'>LiveDemo</a>
+          <div className="portfolio__item-cta">
+            <a href="https://github.com/any-stone/funventory-app" className='btn' target='_blank'>GitHub</a>
+            <a href="https://funventory-app.fly.dev/" className='btn btn-primary' target='_blank'>LiveDemo</a>
+          </div>
         </article>
 
         <article className='portfolio__item'>
@@ -45,10 +51,12 @@ const Portfolio = () => {
             <img src={PIC4} alt="Ugly Tetris app screenshot" />
           </div>
           <h3>Ugly Tetris</h3>
-          <a href="https://github.com/any-stone/Shrektris" className='btn' target='_blank'>GitHub</a>
-          <a href="https://shrektris.netlify.app/" className='btn btn-primary' target='_blank'>LiveDemo</a>
+          <div className="portfolio__item-cta">
+            <a href="https://github.com/any-stone/Shrektris" className='btn' target='_blank'>GitHub</a>
+            <a href="https://shrektris.netlify.app/" className='btn btn-primary' target='_blank'>LiveDemo</a>
+          </div>
         </article>
-        
+
       </div>
     </section>
   )
