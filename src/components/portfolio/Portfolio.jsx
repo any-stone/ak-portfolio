@@ -5,6 +5,37 @@ import PIC2 from '../../assets/biteBuddy.png'
 import PIC3 from '../../assets/funventory.png'
 import PIC4 from '../../assets/uglyTetris.png'
 
+const data = [
+  {
+    id: 1,
+    image: PIC1,
+    title: 'Joybox',
+    github: 'https://github.com/any-stone/joy-box-front-end',
+    demo: 'https://joybox-app.netlify.app/'
+  },
+  {
+    id: 2,
+    image: PIC2,
+    title: 'BiteBuddy',
+    github: 'https://github.com/Nswooten/bite-buddy-front-end',
+    demo: 'https://bitebuddyapp.netlify.app/'
+  },
+  {
+    id: 3,
+    image: PIC3,
+    title: 'FUNventory app',
+    github: 'https://github.com/any-stone/funventory-app',
+    demo: 'https://funventory-app.fly.dev/'
+  },
+  {
+    id: 4,
+    image: PIC4,
+    title: 'Ugly Tetris',
+    github: 'https://github.com/any-stone/Shrektris',
+    demo: 'https://shrektris.netlify.app/'
+  },
+]
+
 const Portfolio = () => {
   return (
     <section id='portfolio'>
@@ -12,51 +43,22 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={PIC1} alt="Joybox app screenshot" />
-          </div>
-          <h3>Joybox</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/any-stone/joy-box-front-end" className='btn' target='_blank'>GitHub</a>
-            <a href="https://joybox-app.netlify.app/" className='btn btn-primary' target='_blank'>LiveDemo</a>
-          </div>
-        </article>
-
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={PIC2} alt="BiteBuddy app screenshot" />
-          </div>
-          <h3>BiteBuddy</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/Nswooten/bite-buddy-front-end" className='btn' target='_blank'>GitHub</a>
-            <a href="https://bitebuddyapp.netlify.app/" className='btn btn-primary' target='_blank'>LiveDemo</a>
-          </div>
-        </article>
-
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={PIC3} alt="FUNventory app screenshot" />
-          </div>
-          <h3>FUNventory</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/any-stone/funventory-app" className='btn' target='_blank'>GitHub</a>
-            <a href="https://funventory-app.fly.dev/" className='btn btn-primary' target='_blank'>LiveDemo</a>
-          </div>
-        </article>
-
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={PIC4} alt="Ugly Tetris app screenshot" />
-          </div>
-          <h3>Ugly Tetris</h3>
-          <div className="portfolio__item-cta">
-            <a href="https://github.com/any-stone/Shrektris" className='btn' target='_blank'>GitHub</a>
-            <a href="https://shrektris.netlify.app/" className='btn btn-primary' target='_blank'>LiveDemo</a>
-          </div>
-        </article>
-
+        {
+          data.map(({ id, image, title, github, demo }) => {
+            return (
+              <article key={id} className='portfolio__item'>
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className="portfolio__item-cta">
+                  <a href={github} className='btn' target='_blank'>GitHub</a>
+                  <a href={demo} className='btn btn-primary' target='_blank'>LiveDemo</a>
+                </div>
+              </article>
+            )
+          })
+        }
       </div>
     </section>
   )
