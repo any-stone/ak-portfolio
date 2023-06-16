@@ -1,9 +1,9 @@
 import React from 'react'
 import './about.css'
 import ME from '../../assets/me2.jpg'
-import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
-import {VscFolderLibrary} from 'react-icons/vsc'
+import { BsCodeSlash } from 'react-icons/bs'
+import { MdComputer } from 'react-icons/md'
+import { VscFolderLibrary } from 'react-icons/vsc'
 
 const About = () => {
   return (
@@ -21,24 +21,24 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className='about__card'>
-              <FaAward className='about__icon'/>
-              <h5>Experience</h5>
-              <small>2+ Years</small>
+              <BsCodeSlash className='about__icon' />
+              <h5>Development Experience</h5>
+              <small>1+ Years</small>
             </article>
             <article className='about__card'>
-              <FiUsers className='about__icon'/>
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <MdComputer className='about__icon' />
+              <h5>Technical experience</h5>
+              <small>3+ years</small>
             </article>
             <article className='about__card'>
-              <VscFolderLibrary className='about__icon'/>
+              <VscFolderLibrary className='about__icon' />
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>6+ Completed</small>
             </article>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum mollitia omnis magnam consectetur rem provident earum est commodi, laboriosam in expedita facilis officiis incidunt quis et enim sit quo aspernatur?
+            Brewing up a storm in the tech world, I'm a Fullstack Developer with a rich blend of experience from HR to Tech Support, now crafting code like a barista crafts coffee. When not coding, find me by the ocean – my muse, leveling up in video games, or as a coffee connoisseur in pursuit of the perfect blend. With a background as diverse as coffee beans, I’m all set to serve innovation with a dash of creativity - let’s create something brew-tiful together!
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
