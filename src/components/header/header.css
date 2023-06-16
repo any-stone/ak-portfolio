@@ -55,7 +55,7 @@ header {
   font-size: 0.9rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
   header {
     height: 68vh;
   }
@@ -72,3 +72,4 @@ header {
     display: none;
   }
 }
+
